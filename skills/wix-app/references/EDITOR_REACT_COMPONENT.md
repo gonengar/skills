@@ -44,6 +44,7 @@ File where you can override the generated manifest from `<componentName>.generat
    the new/updated prop schema. This command regenerates manifest
    parts for all components.
 5. Update `Component.extensions.ts` file according to [`editor-react-component/COMPONENT-CONFIGURATION.md`](editor-react-component/COMPONENT-CONFIGURATION.md)
+6. Add design states. Walk the React component, decide which native states (`hover`, `focus`, `disabled`, `invalid`) and custom states apply per [`editor-react-component/DESIGN-STATES-SUGGESTIONS.md`](editor-react-component/DESIGN-STATES-SUGGESTIONS.md), then declare them by overriding `editorElement.states` in `<ComponentName>.extension.ts` per [`editor-react-component/DESIGN-STATES.md`](editor-react-component/DESIGN-STATES.md).
 
 Reference: when modifying an _existing_ component, follow
 [`editor-react-component/EDIT-FLOW.md`](editor-react-component/EDIT-FLOW.md).
@@ -59,6 +60,8 @@ Topic-focused references (rules + patterns + common mistakes in one place):
 - [`editor-react-component/PROPS-VS-CSS.md`](editor-react-component/PROPS-VS-CSS.md) — What should be a React prop vs CSS
 - [`editor-react-component/COMPONENT-API.md`](editor-react-component/COMPONENT-API.md) — Props structure, elementProps, data types, file splitting, containers, array props
 - [`editor-react-component/REACT-PATTERNS.md`](editor-react-component/REACT-PATTERNS.md) — SSR-safe patterns, CSS rules, remaining common mistakes
+- [`editor-react-component/DESIGN-STATES.md`](editor-react-component/DESIGN-STATES.md) — How to add design states (`hover`, `focus`, `disabled`, `invalid`, custom) to root and inner elements
+- [`editor-react-component/DESIGN-STATES-SUGGESTIONS.md`](editor-react-component/DESIGN-STATES-SUGGESTIONS.md) — Heuristics the skill uses to infer which states fit a component
 
 ## CSS guidelines
 
